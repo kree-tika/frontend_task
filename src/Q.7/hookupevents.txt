@@ -1,0 +1,14 @@
+
+
+function hookupevents() {
+  for (var i = 0; i < 3; i++) {
+    document
+      .getElementById("button" + i)
+      .addEventListener("click", function () {
+        alert(i);
+      });
+  }
+}
+
+The output of the hookupevents() function will be the same for all three buttons when clicked. It will always display 
+the value of i as 3 in the alert box.

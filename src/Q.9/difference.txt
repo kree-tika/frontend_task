@@ -1,0 +1,22 @@
+Server Side Rendering (SSR):
+
+SSR is a technique where the server renders the web content dynamically and sends a fully populated HTML response to the client.
+In SSR, the server fetches the data, processes it, and generates the HTML with the data before sending it to the client.
+With SSR, each request results in server-side processing and rendering, allowing dynamic content to be included in the initial response.
+SSR is useful when you have frequently changing or personalized content, such as user-specific data or real-time data that needs to be fetched on each request.
+
+Static Site Generation (SSG):
+
+SSG is a technique where the web content is pre-rendered at build time and served as static HTML files.
+In SSG, the site is generated during the build process, and the generated HTML files can be deployed to a static file server or a Content Delivery Network (CDN).
+With SSG, the content is pre-rendered, so each request serves static HTML files without any server-side processing.
+SSG is suitable when you have content that doesn't change frequently, such as blog posts, marketing pages, or documentation.
+SSG offers improved performance and scalability as the static HTML files can be cached and served directly from a CDN, reducing the load on the server.
+
+When to prefer SSG over SSR:
+
+If your content doesn't require real-time data and doesn't change frequently, SSG can offer significant performance benefits as it eliminates the need for server-side processing on each request.
+SSG can handle high traffic more efficiently since the static files can be served directly from a CDN without any server processing.
+
+If you have a large-scale website with many pages, SSG can be more efficient as the content is pre-rendered during the build process, reducing the server load during runtime.
+SSG is also beneficial when the infrastructure or server-side processing is limited or costly, as it simplifies the architecture by eliminating the need for server-side rendering on each request.
